@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#042924"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/logo"
+            android:layout_marginLeft="115dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reservation Process"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingBottom="16dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="0dp"
+            />
+
+        <EditText
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:background="@drawable/input_background"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email"
+            android:background="@drawable/input_background"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your phone number"
+            android:background="@drawable/input_background"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/reservation_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reservation Date (DD/MM/YYYY)"
+            android:background="@drawable/input_background"
+            android:inputType="date"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/reservation_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reservation Time (00:00 AM/PM)"
+            android:background="@drawable/input_background"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/number_of_guests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of Guests"
+            android:background="@drawable/input_background"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/reservation_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="#FFD600"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:layout_marginTop="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No extra charges will apply."
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/reserve_now"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reserve Now"
+            android:backgroundTint="#D50000"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+</ScrollView>

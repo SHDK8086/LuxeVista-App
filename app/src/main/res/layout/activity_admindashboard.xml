@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#042924"
+    android:padding="16dp">
+
+  <LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logout"
+        android:layout_marginLeft="300dp"
+      />
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:layout_marginLeft="110dp"
+      />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Notification"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginLeft="90dp"
+        android:textStyle="bold"
+
+      />
+
+    <EditText
+        android:id="@+id/notificationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Notification Title"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        android:padding="12dp"
+        android:background="@drawable/input_background"/>
+
+    <EditText
+        android:id="@+id/notificationDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Notification Description"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_background"
+        />
+
+    <EditText
+        android:id="@+id/sendTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Sending Time (00:00 AM/PM)"
+        android:inputType="text"
+        android:padding="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_background"
+        />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Send Notification"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="60dp"
+        android:backgroundTint="#D50000"/>
+  </LinearLayout>
+
+</ScrollView>
+

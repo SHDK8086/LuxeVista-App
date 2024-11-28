@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StandardRooms">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="410dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/bg_corner">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:srcCompat="@drawable/logo"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="84dp"
+                        android:text="LuxeVista Resort Services"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <GridLayout
+                android:id="@+id/roomGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="230dp"
+                    android:layout_margin="8dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:background="#042924">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:src="@drawable/midrange" />
+
+                        <TextView
+                            android:id="@+id/roomTypeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dining and Culinary Experiences"
+                            android:textColor="#FFAB00"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="-100dp"
+                            android:layout_marginStart="140dp" />
+
+                        <Button
+                            android:id="@+id/add_dining"
+                            android:layout_width="170dp"
+                            android:layout_height="40dp"
+                            android:text="Add a reservation"
+                            android:textColor="@color/white"
+                            android:backgroundTint="#DD2C00"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="170dp"
+                            android:textSize="12sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:text="* Breakfast: Often served from 6:30 AM to 10:30 AM.
+                                          * Lunch: Typically available from 12:00 PM to 3:00 PM.
+                                          * Dinner: Commonly served from 6:30 PM to 10:00 PM.
+                                          * Bars and Lounges: May operate from 11:00 AM to 11:00 PM or later.
+                                          * Special Dining Events: Timing varies, often starting around 7:00 PM."
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="50dp" />
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/plus"
+                            android:layout_marginStart="137dp"
+                            android:layout_marginTop="-21dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="-55dp"
+                            />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="230dp"
+                    android:layout_margin="8dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:background="#042924">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:src="@drawable/guide" />
+
+                        <TextView
+                            android:id="@+id/roomTypeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Recreational and Leisure Activities"
+                            android:textColor="#FFAB00"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="-110dp"
+                            android:layout_marginStart="140dp" />
+
+                        <Button
+                            android:id="@+id/add_recreational"
+                            android:layout_width="170dp"
+                            android:layout_height="40dp"
+                            android:text="Add a reservation"
+                            android:textColor="@color/white"
+                            android:backgroundTint="#DD2C00"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="170dp"
+                            android:textSize="12sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="366dp"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="40dp"
+                            android:text="* Pools and Beaches: Accessible from 6:00 AM to 8:00 PM.
+                                          * Yoga, Fitness Classes: In the morning (7:00 AM to 9:00 AM)
+                                          * Guided Tours:available from 7:00 AM to 5:00 PM."
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/plus"
+                            android:layout_marginStart="137dp"
+                            android:layout_marginTop="-21dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="-55dp"
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="230dp"
+                    android:layout_margin="8dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:background="#042924">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:src="@drawable/spatreatment" />
+
+                        <TextView
+                            android:id="@+id/roomTypeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Spa and Wellness Services"
+                            android:textColor="#FFAB00"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="-110dp"
+                            android:layout_marginStart="150dp" />
+
+                        <Button
+                            android:id="@+id/add_spa"
+                            android:layout_width="170dp"
+                            android:layout_height="40dp"
+                            android:text="Add a reservation"
+                            android:textColor="@color/white"
+                            android:backgroundTint="#DD2C00"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="170dp"
+                            android:textSize="12sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:text="* Spa Treatments: Usually operate from 9:00 AM to 9:00 PM
+                                          * Fitness Centers: Often open 24/7"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="60dp" />
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/plus"
+                            android:layout_marginStart="137dp"
+                            android:layout_marginTop="-21dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="-55dp"
+                            />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="230dp"
+                    android:layout_margin="8dp"
+                    android:layout_columnWeight="1"
+                    app:cardCornerRadius="18dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="8dp"
+                        android:background="#042924">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:src="@drawable/accommodation" />
+
+                        <TextView
+                            android:id="@+id/roomTypeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Accommodation Services"
+                            android:textColor="#FFAB00"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="-80dp"
+                            android:layout_marginStart="150dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:text="* Check-in: Usually from 2:00 PM to 4:00 PM.
+                                          * Check-out: Typically between 10:00 AM and 12:00 PM.
+                                          * Room Service: Often available 24/7
+                                          "
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="70dp" />
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/plus"
+                            android:layout_marginStart="137dp"
+                            android:layout_marginTop="-21dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="80dp"
+                            android:layout_marginTop="-55dp"
+                            />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

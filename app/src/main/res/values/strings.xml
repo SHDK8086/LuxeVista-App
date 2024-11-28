@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">LuxeVista</string>
+    <string-array name="room_names">
+        <item>All</item>
+        <item>Standard Room</item>
+        <item>Deluxe Room</item>
+        <item>Family Room</item>
+        <item>Accessible Room</item>
+    </string-array>
+
+    <string-array name="room_names2">
+        <item>All</item>
+        <item>Standard Room</item>
+        <item>Deluxe Room</item>
+        <item>Family Room</item>
+        <item>Accessible Room</item>
+    </string-array>
+
+    <string-array name="room_names3">
+        <item>All</item>
+        <item>Themed Rooms</item>
+        <item>Honeymoon Suits</item>
+        <item>Penthouse Suites</item>
+        <item>Villa Rooms</item>
+    </string-array>
+
+</resources>
